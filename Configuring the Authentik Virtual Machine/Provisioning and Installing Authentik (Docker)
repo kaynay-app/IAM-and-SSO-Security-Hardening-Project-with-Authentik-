@@ -1,0 +1,19 @@
+### Phase 1: Package Management Alignment
+Before deployment, initial system package lookup loops on the Alpine host were resolved by adjusting the underlying community repository tree branches.
+
+```bash
+# Toggle and update the Alpine community repository branch to fix system repository loops
+setup-apkrepos
+```
+
+### Phase 2: Container Engine Initialization
+Once the repository synchronization was stabilized, the core container virtualization runtime tools were provisioned, started, and persisted across system reboots:
+
+```bash
+# Install Docker Engine and the Compose CLI plugin
+apk add docker docker-cli-compose
+
+# Start the Docker daemon infrastructure and enable it on system boot
+rc-service docker start
+rc-update add docker boot
+```
