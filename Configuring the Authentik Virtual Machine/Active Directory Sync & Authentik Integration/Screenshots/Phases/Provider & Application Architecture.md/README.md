@@ -7,7 +7,7 @@ This documentation stage covers the design and execution of federated single sig
 * **The Application:** Defines *what* the user sees on their dashboard portal (the friendly name, application branding, and access policies tied directly to it).
 
 
-# The core goal of setting up a Provider and an Application in Authentik is to decouple user identities from specific platforms—acting as a centralized gatekeeper that securely translates and passes user authentication data to external tools using modern security standards (like SAML or OIDC).
+## The core goal of setting up a Provider and an Application in Authentik is to decouple user identities from specific platforms—acting as a centralized gatekeeper that securely translates and passes user authentication data to external tools using modern security standards (like SAML or OIDC).
 Here is exactly what the goal was and a detailed log of what you accomplished during that phase:
 
 🎯 The Strategic Goal
