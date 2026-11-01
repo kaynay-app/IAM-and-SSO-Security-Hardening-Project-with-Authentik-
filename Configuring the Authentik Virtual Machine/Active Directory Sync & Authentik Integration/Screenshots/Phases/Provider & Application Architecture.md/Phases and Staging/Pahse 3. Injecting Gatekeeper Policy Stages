@@ -1,0 +1,5 @@
+### 3. Injecting Gatekeeper Policy Stages
+* Placed a rigid Multi-Factor Authentication (MFA) validation requirement directly in front of the application's routing stage.
+* This ensures that even if a user passes the primary credential check, Authentik halts the pipeline to challenge for an out-of-band factor (such as TOTP or Duo) before authorizing access.
+
+---
